@@ -10,14 +10,6 @@ namespace E_sport_application
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            try
-            {
-                Helper.EnsureDatabaseAndSchema("DefaultConnection");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Database initialization failed: {ex.Message}\n\nDetails: {ex.InnerException?.Message}", "Database Initialization", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
         }
     }
 
