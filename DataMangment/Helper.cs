@@ -105,7 +105,7 @@ namespace DataMangment
 
                 // Now open the newly created (or existing) database and ensure tables.
                 // We add a retry mechanism here because sometimes the DB is not immediately ready.
-                int retries = 3;
+                int retries = 15;
                 while (retries > 0)
                 {
                     try 
@@ -243,7 +243,7 @@ END
                      CreateDatabase(cs, dbName);
                      
                      // Retry connection with delay
-                     int retries = 3;
+                     int retries = 19;
                      while (retries > 0)
                      {
                         try 
