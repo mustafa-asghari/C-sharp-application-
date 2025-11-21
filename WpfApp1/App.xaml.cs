@@ -16,7 +16,7 @@ namespace E_sport_application
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Database initialization failed: {ex.Message}", "Database Initialization", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Database initialization failed: {ex.Message}\n\nDetails: {ex.InnerException?.Message}", "Database Initialization", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

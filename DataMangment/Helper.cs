@@ -2,6 +2,7 @@ using System;
 using System.Configuration;
 using System.Data;
 using Microsoft.Data.SqlClient;
+using System.Threading;
 
 namespace DataMangment
 {
@@ -57,7 +58,7 @@ namespace DataMangment
             created = false;
 
             // Always work from the configured connection string in App.config.
-            // We ask for \"Default\" but GetConnectionString also supports \"DefaultConnection\"
+            // We ask for "Default" but GetConnectionString also supports "DefaultConnection"
             // as a fallback, so both names continue to work.
             string cfg;
             try
@@ -100,34 +101,28 @@ namespace DataMangment
             //    then create the schema.
             try
             {
-                // Connect to the server's master database.
-                var masterBuilder = new SqlConnectionStringBuilder(cfg)
-                {
-                    InitialCatalog = "master"
-                };
-
-                using (var masterConn = new SqlConnection(masterBuilder.ConnectionString))
-                {
-                    masterConn.Open();
-                    using (var cmd = masterConn.CreateCommand())
-                    {
-                        cmd.CommandType = CommandType.Text;
-
-                        // Safely embed the database name and create it if it does not exist.
-                        var safeNameForDbId = dbName.Replace("'", "''");
-                        var safeNameForBracket = dbName.Replace("]", "]]");
-                        cmd.CommandText =
-                            $"IF DB_ID(N'{safeNameForDbId}') IS NULL CREATE DATABASE [{safeNameForBracket}]";
-
-                        cmd.ExecuteNonQuery();
-                    }
-                }
+                CreateDatabase(cfg, dbName);
 
                 // Now open the newly created (or existing) database and ensure tables.
-                using (var conn = new SqlConnection(cfg))
+                // We add a retry mechanism here because sometimes the DB is not immediately ready.
+                int retries = 3;
+                while (retries > 0)
                 {
-                    conn.Open();
-                    InitializeSchema(conn);
+                    try 
+                    {
+                        using (var conn = new SqlConnection(cfg))
+                        {
+                            conn.Open();
+                            InitializeSchema(conn);
+                        }
+                        break; // Success
+                    }
+                    catch
+                    {
+                        retries--;
+                        if (retries == 0) throw;
+                        Thread.Sleep(1000); // Wait 1 second before retrying
+                    }
                 }
 
                 _resolvedConnectionString = cfg;
@@ -139,6 +134,32 @@ namespace DataMangment
             {
                 connectionString = string.Empty;
                 return false;
+            }
+        }
+
+        private static void CreateDatabase(string connectionString, string dbName)
+        {
+             // Connect to the server's master database.
+            var masterBuilder = new SqlConnectionStringBuilder(connectionString)
+            {
+                InitialCatalog = "master"
+            };
+
+            using (var masterConn = new SqlConnection(masterBuilder.ConnectionString))
+            {
+                masterConn.Open();
+                using (var cmd = masterConn.CreateCommand())
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    // Safely embed the database name and create it if it does not exist.
+                    var safeNameForDbId = dbName.Replace("'", "''");
+                    var safeNameForBracket = dbName.Replace("]", "]]");
+                    cmd.CommandText =
+                        $"IF DB_ID(N'{safeNameForDbId}') IS NULL CREATE DATABASE [{safeNameForBracket}]";
+
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
 
@@ -197,15 +218,58 @@ END
                 cmd.ExecuteNonQuery();
             }
         }
+        
         public static void EnsureDatabaseAndSchema(string name)
         {
             // Only use configured connection string; no LocalDB fallback
             var cs = GetConnectionString(name);
-            using (var conn = new SqlConnection(cs))
+            
+            try 
             {
-                conn.Open();
-                InitializeSchema(conn);
+                using (var conn = new SqlConnection(cs))
+                {
+                    conn.Open();
+                    InitializeSchema(conn);
+                }
             }
+            catch
+            {
+                // If connection failed, try creating the database
+                try 
+                {
+                     var builder = new SqlConnectionStringBuilder(cs);
+                     var dbName = builder.InitialCatalog;
+                     
+                     CreateDatabase(cs, dbName);
+                     
+                     // Retry connection with delay
+                     int retries = 3;
+                     while (retries > 0)
+                     {
+                        try 
+                        {
+                            using (var conn = new SqlConnection(cs))
+                            {
+                                conn.Open();
+                                InitializeSchema(conn);
+                            }
+                            break;
+                        }
+                        catch
+                        {
+                             retries--;
+                             if (retries == 0) throw;
+                             Thread.Sleep(1000);
+                        }
+                     }
+                }
+                catch (Exception ex)
+                {
+                    // Throw original or new exception
+                    throw new Exception($"Failed to connect to or create database '{name}'.", ex);
+                }
+            }
+            
             _resolvedConnectionString = cs;
         }
     }

@@ -3,8 +3,18 @@
   "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\a16bf6dc60821d96eb98526efe2f9194a563359120b7cb62fdff71af1ff3b315\\Application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{596BF14C-7DB7-4738-A784-9BFE69618498}|E_sport_application.csproj|c:\\mac\\home\\documents\\tafe\uF028\\c sharp\\e_sport_application\\e_sport_application-main\\wpfapp1\\app.config||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{596BF14C-7DB7-4738-A784-9BFE69618498}|E_sport_application.csproj|solutionrelative:app.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{596BF14C-7DB7-4738-A784-9BFE69618498}|E_sport_application.csproj|c:\\mac\\home\\documents\\tafe\uF028\\c sharp\\e_sport_application\\e_sport_application-main\\wpfapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{596BF14C-7DB7-4738-A784-9BFE69618498}|E_sport_application.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{596BF14C-7DB7-4738-A784-9BFE69618498}|E_sport_application.csproj|c:\\mac\\home\\documents\\tafe\uF028\\c sharp\\e_sport_application\\e_sport_application-main\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -40,10 +50,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{596BF14C-7DB7-4738-A784-9BFE69618498}|E_sport_application.csproj|c:\\mac\\home\\documents\\tafe\uF028\\c sharp\\e_sport_application\\e_sport_application-main\\wpfapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{596BF14C-7DB7-4738-A784-9BFE69618498}|E_sport_application.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{596BF14C-7DB7-4738-A784-9BFE69618498}|E_sport_application.csproj|c:\\mac\\home\\documents\\tafe\uF028\\c sharp\\e_sport_application\\e_sport_application-main\\wpfapp1\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -165,19 +171,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\a16bf6dc60821d96eb98526efe2f9194a563359120b7cb62fdff71af1ff3b315\\Application.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\a16bf6dc60821d96eb98526efe2f9194a563359120b7cb62fdff71af1ff3b315\\Application.cs",
+              "ToolTip": "C:\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\a16bf6dc60821d96eb98526efe2f9194a563359120b7cb62fdff71af1ff3b315\\Application.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\a16bf6dc60821d96eb98526efe2f9194a563359120b7cb62fdff71af1ff3b315\\Application.cs",
+              "ViewState": "AgIAAPYFAAAAAAAAAAAswAYGAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T23:20:44.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Users\\mustafaasghari\\AppData\\Local\\Temp\\.vsdbgsrc\\aad6be2495d0a786b94b3514a5b6903407fe2d6a75ad7e505df6a9d895927867\\XamlReader.cs [Read Only]",
+              "ViewState": "AgIAAKkBAAAAAAAAAAAswLUBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T23:18:48.801Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\App.config",
               "RelativeDocumentMoniker": "App.config",
               "ToolTip": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\App.config",
               "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-15T06:34:05.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T06:34:05.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "ReportView.xaml.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\ReportView.xaml.cs",
               "RelativeDocumentMoniker": "ReportView.xaml.cs",
@@ -189,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ReportView.xaml",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\ReportView.xaml",
               "RelativeDocumentMoniker": "ReportView.xaml",
@@ -200,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "TeamResultReport.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\Datas\\TeamResultReport.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\Datas\\TeamResultReport.cs",
@@ -212,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Teams.xaml",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Teams.xaml",
               "RelativeDocumentMoniker": "Teams.xaml",
@@ -223,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -235,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Microsoft.WinFX.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
@@ -247,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\AssemblyInfo.cs",
@@ -259,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "teams_info.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\Datas\\teams_info.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\Datas\\teams_info.cs",
@@ -271,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "result_info.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\Datas\\result_info.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\Datas\\result_info.cs",
@@ -283,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "games_info.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\Datas\\games_info.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\Datas\\games_info.cs",
@@ -295,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -306,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "events_info.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\Datas\\events_info.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\Datas\\events_info.cs",
@@ -318,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "DataMangment.csproj",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\DataMangment.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\DataMangment.csproj",
@@ -330,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Helper.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\Helper.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\Helper.cs",
@@ -342,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "DataAdapter.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\e_sport_team\\DataMangment\\DataAdapter.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\e_sport_team\\DataMangment\\DataAdapter.cs",
@@ -354,19 +385,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T02:37:55.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
@@ -378,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Events.xaml.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Events.xaml.cs",
               "RelativeDocumentMoniker": "Events.xaml.cs",
@@ -390,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Events.xaml",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Events.xaml",
               "RelativeDocumentMoniker": "Events.xaml",
@@ -401,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Games.xaml.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Games.xaml.cs",
               "RelativeDocumentMoniker": "Games.xaml.cs",
@@ -413,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Result.xaml.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Result.xaml.cs",
               "RelativeDocumentMoniker": "Result.xaml.cs",
@@ -425,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Result.xaml",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Result.xaml",
               "RelativeDocumentMoniker": "Result.xaml",
@@ -436,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Teams.xaml.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Teams.xaml.cs",
               "RelativeDocumentMoniker": "Teams.xaml.cs",
@@ -448,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "E-sport-application.csproj.Backup.tmp",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\E-sport-application.csproj.Backup.tmp",
               "RelativeDocumentMoniker": "E-sport-application.csproj.Backup.tmp",
@@ -460,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Games.xaml",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Games.xaml",
               "RelativeDocumentMoniker": "Games.xaml",
@@ -471,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "E_sport_application.csproj",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\E_sport_application.csproj",
               "RelativeDocumentMoniker": "E_sport_application.csproj",
@@ -479,24 +510,22 @@
               "RelativeToolTip": "E_sport_application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-24T02:11:31.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T02:11:31.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "E_sport_application",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\E_sport_application.csproj",
               "RelativeDocumentMoniker": "E_sport_application.csproj",
               "ToolTip": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\E_sport_application.csproj",
               "RelativeToolTip": "E_sport_application.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-24T02:13:34.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T02:13:34.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Settings.settings",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\tafe\uF028\\c sharp\\E_sport_application\\E_sport_application-main\\WpfApp1\\Properties\\Settings.settings",
               "RelativeDocumentMoniker": "Properties\\Settings.settings",

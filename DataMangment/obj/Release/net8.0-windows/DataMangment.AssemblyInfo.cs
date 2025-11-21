@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataMangment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+469a97c6318dde170cf5d7d5fae1af207dff71f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataMangment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataMangment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
