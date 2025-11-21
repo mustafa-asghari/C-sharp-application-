@@ -218,5 +218,59 @@ END
                 cmd.ExecuteNonQuery();
             }
         }
+        
+        public static void EnsureDatabaseAndSchema(string name)
+        {
+            // Only use configured connection string; no LocalDB fallback
+            var cs = GetConnectionString(name);
+            
+            try 
+            {
+                using (var conn = new SqlConnection(cs))
+                {
+                    conn.Open();
+                    InitializeSchema(conn);
+                }
+            }
+            catch
+            {
+                // If connection failed, try creating the database
+                try 
+                {
+                     var builder = new SqlConnectionStringBuilder(cs);
+                     var dbName = builder.InitialCatalog;
+                     
+                     CreateDatabase(cs, dbName);
+                     
+                     // Retry connection with delay
+                     int retries = 3;
+                     while (retries > 0)
+                     {
+                        try 
+                        {
+                            using (var conn = new SqlConnection(cs))
+                            {
+                                conn.Open();
+                                InitializeSchema(conn);
+                            }
+                            break;
+                        }
+                        catch
+                        {
+                             retries--;
+                             if (retries == 0) throw;
+                             Thread.Sleep(1000);
+                        }
+                     }
+                }
+                catch (Exception ex)
+                {
+                    // Throw original or new exception
+                    throw new Exception($"Failed to connect to or create database '{name}'.", ex);
+                }
+            }
+            
+            _resolvedConnectionString = cs;
+        }
     }
 }
